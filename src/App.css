@@ -1,0 +1,559 @@
+/*首页样式开始*/
+*,body{
+  margin: 0;
+  padding:0;
+}
+::-webkit-scrollbar{
+  width:0px
+}
+.nav {
+  position:relative;
+  height:58px;
+  background:#fff;
+}
+  .logo{
+    display:inline-block;
+    position:absolute;
+    left:23px;
+    width:154px;
+    height:30px;
+    top:14px;
+    vertical-align:middle;
+  }
+  .user{
+    display:inline-block;
+    position:absolute;
+    right:23px;
+    top:12px;
+    vertical-align:middle;
+    text-align:right;
+  }
+.advertising{
+  width:100%;
+  height:180px;
+  box-sizing:border-box;
+  padding:20px 15px;
+  text-align:center;
+  background:rgb(245,245,245);
+}
+  .ad-item{
+      width:100%;
+  }
+.types{
+    width:100%;
+    height:45px;
+    padding:11px 0;
+    text-align:center;
+    background:#fff;
+}
+    .type-item{
+        display:inline-block;
+        width:32px;
+    }
+      .type-item:not(:last-child){
+          margin-right:40px;
+      }
+      .type-item a{
+        text-decoration: none;
+        color:rgb(131,145,146);
+      }
+        .icon{
+            display:inline-block;
+            margin-bottom:2px;
+            width:24px;
+            height:24px;
+        }
+        .typename{
+            font-size:16px;
+        }
+  .divider{
+    width:100%;
+    height:15px;
+    background:rgb(245,245,245);
+  }
+  .ranking{
+      width:100%;
+      height:250px;
+      background:#fff;
+    }
+    .ranking .title,.free .title{
+        margin:15px 10px;
+        height:28px;
+        line-height:28px;
+      }
+      .colorbar{
+          display:inline-block;
+          width:2px;
+          height:28px;
+          background:rgb(255,62,62);
+        }
+      .ranking .title h1,.free .title h1,.timer{
+          display:inline-block;
+          margin:0 0 0 6px ;
+          vertical-align:top;
+        }
+    .ranking .content,.free .content{
+        padding:10px 18px;
+        height:200px;
+        white-space:nowrap;
+        overflow: hidden;
+      }
+      .book{
+          display:inline-block;
+          width:100px;
+        }
+        .book:not(:last-child){
+            margin-right:10px;
+          }
+        .book img{
+            width:100px;
+            height:140px;
+          }
+        .booktitle,.book .author{
+            display:block;
+            width:100%;
+          }
+        .booktitle{
+            line-height:20px;
+            font-size:16px;
+            color:rgb(131,145,146);
+          }
+        .author{
+            line-height:20px;
+            font-size:14px;
+            color:rgb(232,232,232);
+          }
+/*首页样式结束*/
+/*文章类别列表开始*/
+.back{
+  width:100%;
+  height:60px;
+  line-height:60px;
+  background:#fff;
+}
+  .back a{
+    text-decoration: none;
+    color:#999;
+  }
+  .back .icon{
+    display:inline-block;
+    margin:20px 0 0 14px;
+    width:20px;
+    height:20px;
+  }
+  .typename,.bookname,.tohome{
+    vertical-align:top;
+    font-size:16px;
+    color:#999;
+  }
+.list{
+  width:100%;
+  padding:0 18px;
+  box-sizing:border-box;
+}
+  .list a{
+    text-decoration: none;
+  }
+  .list .book{
+    width:100%;
+    height:180px;
+    padding:30px 0 20px 0;
+    box-sizing:border-box;
+  }
+  .list .book:not(:last-child){
+    border-bottom:1px solid rgb(226,226,226);    
+  }
+    .list .book img{
+      float:left;
+      width:30%;
+    }
+      .info{
+        width:65%;
+        float:right;
+      }
+        .info .title{
+          font-size:20px;
+          font-weight:700;
+          color:rgb(48,48,48);
+        }
+        .info .describe{
+          display: -webkit-box;
+          -webkit-box-orient:vertical;
+          margin-top:10px;
+          margin-bottom:23px;
+          height:50px;
+          line-height:24px;
+          font-size:18px;
+          color:rgb(162,167,174);
+          -webkit-line-clamp: 2;
+          overflow:hidden;
+          text-overflow: ellipsis;
+        }
+        .info i{
+          display:inline-block;
+          vertical-align:top;
+          width:16px;
+          height:16px;
+        }
+        .info .listauthor{      
+          line-height:16px;
+          vertical-align:top;
+          font-size:12px;
+          color:#8a8a8a;
+        }
+        .info .tip{
+          display:inline-block;
+          float:right;
+          box-sizing:border-box;
+          margin-left:8px;
+          padding:1px 2px;
+          vertical-align:top;
+          line-height:15px;
+          font-size:12px;
+          border:1px solid rgb(226,226,226);
+          border-radius:2px;
+        }
+        .count{
+          color:#008ae6
+        }
+        .state{
+          color:#f00
+        }
+        .booktype{
+          color:#ffd633
+        }
+/*文章类别列表结束*/
+/*文章详情页开始*/
+.bookinfo .content{
+  position:relative;
+  padding:22px;
+  box-sizing:border-box;
+}
+  .bookinfo .thisbook{
+    box-sizing:border-box;
+    height:186px;
+  }
+    .bookinfo img{
+      float:left;
+      margin-right:15px;
+      width: 120px;
+      height:168px;
+    }
+    .bookinfo .info{
+      float:right;
+      width:55%;
+    }     
+      .bookinfo .thistitle{
+        margin-bottom:5px;
+        font-size:20px;
+        letter-spacing:2px;
+        color:rgb(73,73,73);
+      }
+      .bookinfo .author,.bookinfo .booktype,.bookinfo .countandstate{
+        line-height:30px;
+        font-size:16px;
+        color:rgb(162,167,174);
+      }
+  .bookinfo .buttons{
+    display:flex;
+    justify-content:space-around;
+    padding:0 5px 22px;
+    /*border-bottom:1px solid rgb(226,226,226);*/
+  }
+  .buttons{
+    position:absolute;
+    top:156px;
+    right:44px;
+    width:60%;    
+  }
+    .button .free,.button .start,.addto{
+      display:inline-block;
+      width:86px;
+      height:32px;
+      line-height:32px;
+      text-align:center;
+      font-size:14px;
+      color:#999;
+      border:1px solid rgb(226,226,226);
+      border-radius:3px;
+    }
+    .button .free{
+      color:#fff;
+      background:#f00
+    }
+  .bookinfo .describe{
+    display: -webkit-box;
+    padding:10px 2px;
+    text-indent:2em;
+    line-height:32px;
+    font-size:16px;
+    color:rgb(57,57,57);
+    /* autoprefixer: off */
+    /*-webkit-box-orient: vertical;*/
+    /* autoprefixer: on */
+    -webkit-line-clamp: 5;
+    overflow:hidden;
+  }
+  .bookinfo .else{
+    padding-top:8px;
+  }
+    .bookinfo .title{
+      padding-bottom:22px;
+      font-size:20px;
+      font-weight:700;
+      border-bottom:1px solid rgb(226,226,226);
+    }
+    .elselist{
+      display:flex;
+      justify-content:space-around;
+      margin-top:25px;
+      padding:0;
+      font-size:0;
+    }
+      .elselist .book{
+        margin:0;
+        padding:0;
+        border:none;
+      }
+        .elselist .book img{
+          width:100px;
+          height:140px;
+          margin-bottom:10px;
+        }
+        .else .listbookname,.else .listauthor,.else .listtype{
+          display:block;
+          width:100%;
+          line-height:20px;
+          font-size:14px;
+        }
+        .listbookname{
+          color:rgb(57,57,57)
+        }
+        .listauthor,.listtype{
+          color:#999
+        }
+/*文章详情页结束*/
+/*文章阅读页开始*/
+  .reading{
+    position:relative;
+    background: rgb(233,223,199);
+  }
+    .reading .content{
+      padding:15px;
+      line-height:1.75em;
+      font-size:16px
+    }
+    .reading .back{
+        position:fixed;
+        z-index:10;
+        top:0;
+        left:0;
+        width:100%;
+        height:60px;
+        line-height:60px;
+        background:rgba(0,0,0,.8);
+      }
+      .tohome{
+        color:#eee
+      }
+    .controler{
+      position:fixed;
+      z-index:10;
+      bottom:0;
+      left:0;
+      width:100%;
+      line-height:60px;
+    }
+      .choose{
+        position:absolute;
+        bottom:80px;
+        padding:30px 20px;
+        width:100%;
+        height:100px;
+        line-height:0;
+        background:rgba(0,0,0,.8);
+        border-bottom:2px solid rgb(191,190,189);
+      }
+        .fontsize .title,.background .title{
+            margin-right:20px;
+            line-height:32px;
+            font-size:16px;
+            color:rgb(191,190,189);
+          }
+        .fontsize{
+          padding-bottom:35px;
+        }
+          .controler .button{
+            display:inline-block;
+            vertical-align:top;
+            margin-right:15px;
+            width:100px;
+            height:32px;
+            line-height:30px;
+            box-sizing:border-box;
+            text-align:center;
+            font-size:16px;
+            color:rgb(191,190,189);
+            border:1px solid rgb(191,190,189);
+            border-radius:15px;
+          }
+        .background ul{
+            display:inline-block;
+            vertical-align:top;
+          }
+            .background ul .color{
+              display:inline-block;
+              margin-right:8px;
+              width:32px;
+              height:32px;
+              box-sizing:border-box;
+              line-height:32px;
+              vertical-align:top;
+              border-radius:50%;
+              overflow:hidden;
+            }
+              .color span{
+                display:inline-block;
+                width:32px;
+                height:32px;
+              }              
+              .color1{
+                background:rgb(233,223,199)
+              }
+              .color2{
+                background:rgb(234,234,239)
+              }
+              .color3{
+                background:rgb(253,230,224)
+              }
+              .color4{
+                background:rgb(227,237,205)
+              }
+              .color5{
+                background:rgb(220,226,241)
+              }
+              .color6{
+                background:rgb(255,242,226)
+              }
+              .darkcolor1{
+                background:#664d00;
+              }
+              .darkcolor2{
+                background:#595959;
+              }
+              .darkcolor3{
+                background:#600;
+              }
+              .darkcolor4{
+                background:#030;
+              }
+              .darkcolor5{
+                background:#00004d;
+              }
+              .darkcolor6{
+                background:#996600;
+              }
+              .darkcolor1,.darkcolor2,.darkcolor3,.darkcolor4,.darkcolor5,.darkcolor6{
+                color:#ddd;
+              }
+            .active{
+              border:1px solid #f00;
+              border-radius:50%;
+            }
+      .connav{
+        display:flex;
+        justify-content:space-between;
+        position:fixed;
+        bottom:0;
+        left:0;
+        padding:15px 50px;
+        box-sizing:border-box;
+        width:100%;
+        height:80px;
+        font-size:0;
+        color:rgb(191,190,189);
+        background:rgba(0,0,0,.8);
+      }
+        .connav .contents,.connav .navfontsize,.connav .mode{
+          line-height:0;
+          width:32px;
+          font-size:0;
+          text-align:center;
+        }
+          .connav i{
+            display:inline-block;
+            width:16px;
+            height:16px;
+            line-height:20px;
+          }
+          .connav .title{
+            display:block;
+            line-height:32px;
+            font-size:16px;
+          }
+/*目录浮层开始*/
+.contentlist{
+    position:fixed;
+    z-index:20;
+    top:0;
+    left:0;
+    width:100%;
+    background:rgba(0,0,0,.8);
+}  
+    .contentbody{
+      width:90%;
+      background:#fff;
+      overflow-y: auto;
+    }
+      .contentlist .close{
+        position: fixed;
+        z-index: 10;
+        width:90%;
+        height:60px;
+        line-height:60px;
+        background:#fff;
+        border-bottom:2px solid #f00;
+      }
+        .contentbody .title{
+          display:inline-block;
+          vertical-align:top;      
+          width:100%;
+          height:60px;
+          line-height:60px ; 
+          text-align:center;
+          letter-spacing:2px;
+          font-size:18px;
+          color:#f00;
+        }
+          .bkicon{
+            display:inline-block;
+            position:absolute;
+            left:10px;
+            top:16px;
+            width:30px;
+            height:30px;
+          }
+      .chapterlist{
+        position: relative;
+        z-index: 0;
+        top:60px;
+        padding:0 15px;
+        height:667px;
+      }
+        .chapterlist a{
+          text-decoration: none
+        }
+        .chaptertitle{
+          line-height:60px;
+          font-size:16px;
+          color:rgb(57,57,57);
+          border-bottom:1px solid rgb(226,226,226);
+          overflow:hidden;
+          text-overflow:ellipsis;
+          white-space:nowrap;
+        }
+          .listactive{
+            color:#f00
+          }
+/*目录浮层结束*/
+/*文章阅读页结束*/

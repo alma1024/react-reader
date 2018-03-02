@@ -51,7 +51,7 @@ export default class Type extends React.Component{
 											</Link>
 											<i style={useri}></i>
 											<span className="listauthor">{book.author}</span>
-											<span className="tip count">{book.wordcount}万</span>
+											<span className="tip count">{book.wordcount}字</span>
 											<span className="tip state">{book.updatestate===1?'完结':'连载'}</span>
 											<span className="tip booktype">{book.type[0]}</span>
 		            					</div>

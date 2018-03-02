@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-// import { Router, Route, Link, Switch } from 'react-router';{/*<Home />*/}
 import {  HashRouter, Route } from 'react-router-dom';
 import Home from './components/home.js';
 import Stylelist from './components/stylelist.js';
